@@ -1,0 +1,73 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Update your CSS file (e.g., Service.css or App.css) */
+
+.card-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 8px; /* Decrease padding around the container */
+  max-width: 100%; /* Optionally, set a maximum width for the container */
+}
+
+.card {
+  background: #7ccd79;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px; /* Decrease padding inside the card */
+  margin-right: 8px; /* Add smaller margin between cards */
+  flex: 0 0 auto; /* Ensure cards do not grow and maintain their width */
+  min-width: 120px; /* Decrease minimum width for each card */
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 100%; /* Ensure the image fills the card width */
+  border-radius: 8px;
+}
+
+.card p {
+  color: #555;
+  margin: 4px 0; /* Adjust smaller paragraph margins */
+}
